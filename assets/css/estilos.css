@@ -38,6 +38,7 @@ header.portada {
 
 .img-before {
     position: relative;
+    background-color: black;
 
     &::before {
         position: absolute;
