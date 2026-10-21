@@ -15,6 +15,10 @@
     --ca-img-galeria-5: url("https://cdn.pixabay.com/photo/2020/06/28/00/04/chicago-5347435_1280.jpg");
 
     --ca-height-header: 40vh;
+
+    --ca-logo: url("/assets/svg/logo/logoCwbp.svg");
+    --ca-logo-ratio: 83/114;
+    --ca-logo-height: 3rem;
 }
 
 main {
@@ -146,5 +150,27 @@ ul.galeria {
 .diapositiva-5 {
     &::before {
         background-image: var(--ca-img-galeria-5);
+    }
+}
+
+.agua {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: var(--ca-logo-height);
+        /* calc (height * ratio logo) */
+        width: calc(var(--ca-logo-height) * var(--ca-logo-ratio));
+        bottom: 1rem;
+        right: 1rem;
+
+        background-image: var(--ca-logo);
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        opacity: 0.6;
     }
 }
