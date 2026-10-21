@@ -154,23 +154,22 @@ ul.galeria {
 }
 
 .agua {
-    position: relative;
+    /* position: relative; */
 
-    &::before {
-        position: absolute;
+    &::after {
+        position: fixed;
         content: "";
         height: var(--ca-logo-height);
         /* calc (height * ratio logo) */
         width: calc(var(--ca-logo-height) * var(--ca-logo-ratio));
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 2rem;
+        right: 2rem;
 
         background-image: var(--ca-logo);
-        /* background-attachment: fixed; */
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
 
-        opacity: 0.6;
+        /* opacity: 0.6; */
     }
 }
