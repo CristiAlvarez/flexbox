@@ -1,8 +1,8 @@
 :root {
     /* Colores del sitio */
-    --color-a: #2f2525;
-    --color-b: #210d0d;
-    --color-c: #656d56;
+    --color-a: #670b9e;
+    --color-b: #eece80;
+    --color-c: #e67f7f;
     --color-texto: #666;
     --color-body: #fefefe;
     --color-a--hover: rgba(0, 0, 0, 0.5);
@@ -21,8 +21,9 @@
     --ca-height-header: 40vh;
 
     --ca-logo: url("../svg/logo/logoCwbp.svg");
-    --ca-logo-ratio: 83/114;
-    --ca-logo-height: 5rem;
+    --ca-logo2: url("../svg/logo/logo2.svg");
+    --ca-logo-ratio: 375/294;
+    --ca-logo-height: 4rem;
 }
 
 main {
@@ -100,41 +101,56 @@ a {
         }
     }
 }
-/* Media queris */
+/* Botón responsive Media Queris */
+
 .ca-responsive {
-    padding: 20px 30px;
-    border: none;
-    border-radius: 8px;
-    background-color: #198754;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
+    padding: 4em 10em;
+    border-radius: 10px;
+
+    background: var(--color-a);
+    color: #fff;
     &::before {
-        content: "Escritorio: sin media query específica";
+        content: "Móvil: @media (max-width: 599px)";
     }
 }
 
-/* TABLETA: hasta 900 px */
-@media screen and (max-width: 900px) {
+@media (min-width: 600px) {
     .ca-responsive {
-        background-color: #ffc107;
-        color: #222;
-
+        background: var(--color-b);
         &::before {
-            content: "Tableta: @media (max-width: 900px)";
+            content: "Tableta: @media (min-width: 600px)";
         }
     }
 }
 
-/* MÓVIL: hasta 600 px */
-@media screen and (max-width: 600px) {
+@media (min-width: 1024px) {
     .ca-responsive {
-        background-color: #dc3545;
-        color: white;
-
+        background: var(--color-c);
         &::before {
-            content: "Móvil: @media (max-width: 600px)";
+            content: "PC: @media (min-width: 1024px)";
         }
+    }
+}
+
+/* Cambio de color y sombras */
+.ca-transicion-color {
+    width: 100%;
+    height: var(--ca-height-header);
+
+    background-color: var(--color-a);
+    box-shadow: none;
+    box-shadow: 1em 1em 1em var(--color-c);
+    transition:
+        background-color 2s ease,
+        box-shadow 2s ease;
+
+    &:hover {
+        background-color: var(--color-c);
+        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+        box-shadow:
+            var(--color-a) -5px -5px 20px 0px,
+            var(--color-b) 0px 13px 20px 0px,
+            var(--color-c) 8px -8px 10px 0px;
     }
 }
 
@@ -149,7 +165,7 @@ a {
         bottom: 1rem;
         right: 0.5rem;
 
-        background-image: var(--ca-logo);
+        background-image: var(--ca-logo2);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
