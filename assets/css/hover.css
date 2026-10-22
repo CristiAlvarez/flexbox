@@ -2341,8 +2341,8 @@
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #91000a;
-    height: 1.5px;
+    background: #2098d1;
+    height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
@@ -2718,7 +2718,7 @@
     width: 90%;
     opacity: 0;
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, #91000a88 0%, rgba(224, 8, 8, 0) 60%);
+    background: radial-gradient(ellipse at center, #210d0d88 0%, rgba(224, 8, 8, 0) 60%);
     /* W3C */
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
