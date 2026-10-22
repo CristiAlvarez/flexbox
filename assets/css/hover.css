@@ -289,6 +289,7 @@
 }
 
 /* Grow Rotate */
+/* PERSONALIZADO CA */
 .hvr-grow-rotate {
     display: inline-block;
     vertical-align: middle;
@@ -296,7 +297,7 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    transition-duration: 3s;
     -webkit-transition-property: transform;
     transition-property: transform;
 }
@@ -758,7 +759,7 @@
     -webkit-animation-name: hvr-wobble-to-bottom-right;
     animation-name: hvr-wobble-to-bottom-right;
     -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    animation-duration: 8s;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
