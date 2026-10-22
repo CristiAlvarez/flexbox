@@ -134,19 +134,20 @@ a {
 
 /* Cambio de color y sombras */
 .ca-transicion-color {
-    width: 100%;
-    height: var(--ca-height-header);
+    width: 25vw;
+    height: 25vw;
 
     background-color: var(--color-a);
     box-shadow: none;
     box-shadow: 1em 1em 1em var(--color-c);
     transition:
         background-color 2s ease,
-        box-shadow 2s ease;
+        box-shadow 2s ease,
+        width 2s ease;
 
     &:hover {
+        width: 100%;
         background-color: var(--color-c);
-        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
         box-shadow:
             var(--color-a) -5px -5px 20px 0px,
             var(--color-b) 0px 13px 20px 0px,
@@ -170,7 +171,7 @@ a {
         background-size: contain;
         background-position: center;
 
-        opacity: 10;
+        opacity: 50;
     }
 }
 
