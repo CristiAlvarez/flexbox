@@ -22,7 +22,7 @@
 
     --ca-logo: url("../svg/logo/logoCwbp.svg");
     --ca-logo-ratio: 83/114;
-    --ca-logo-height: 3rem;
+    --ca-logo-height: 5rem;
 }
 
 main {
@@ -135,14 +135,6 @@ ul.ca-enlaces {
         /* margin: 0.5em 0; */
         line-height: 1.5;
         color: var(--color-a);
-
-        /* & a {
-            color: var(--color-a);
-
-            &:hover {
-                color: var(--ca-color-h2);
-            }
-        } */
     }
 }
 
