@@ -296,7 +296,7 @@ header.portada {
 
 .img-before {
     position: relative;
-    background-color: black;
+    background-color: rgb(206, 179, 179);
 
     &::before {
         position: absolute;
