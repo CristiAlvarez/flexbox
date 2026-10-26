@@ -29,3 +29,22 @@
     --ca-carrousel-5--medium: url("https://pixfill.dev/480x320/84c757/fff");
     --ca-carrousel-5--thumb: url("https://pixfill.dev/300x200/84c757/fff");
 }
+
+article.carrousel-container {
+    min-height: 100vh;
+
+    & ul.carrousel {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        & li figure {
+            background: greenyellow;
+        }
+
+        & li figure.image1::before {
+            background-image: var(--ca-carrousel-1--thumb);
+        }
+    }
+}
