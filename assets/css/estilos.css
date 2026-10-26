@@ -172,7 +172,7 @@ ul.ca-enlaces {
 
 /* Trasformer */
 ul.demo {
-    background: white;
+    background: #eece8090;
     border: 1px solid #d9deea;
     border-radius: 12px;
     padding: 1.2rem;
@@ -181,6 +181,7 @@ ul.demo {
     align-items: center;
     gap: 1.2rem;
     flex-wrap: wrap;
+    align-content: space-between;
 
     & li {
         display: inline-flex;
