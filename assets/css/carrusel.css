@@ -100,9 +100,12 @@ article.carrousel-container {
 ul.carrousel {
     & li {
         animation: ca-animation 20s infinite ease-in-out;
+        /* Avisa al navegador para que use la aceleración por GPU */
         will-change: transform;
     }
+
     &:hover li {
+        /* Pausa al poner el ratón encima */
         animation-play-state: paused;
     }
 }
