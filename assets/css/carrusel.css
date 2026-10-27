@@ -166,3 +166,81 @@ article.carrousel-container {
         }
     }
 }
+
+@media (min-width: 768px) {
+    article.carrousel-container {
+        & ul.carrousel {
+            & li:nth-child(1) figure::before {
+                background-image: var(--ca-carrousel-1--medium-large);
+            }
+
+            & li:nth-child(2) figure::before {
+                background-image: var(--ca-carrousel-2--medium-large);
+            }
+
+            & li:nth-child(3) figure::before {
+                background-image: var(--ca-carrousel-3--medium-large);
+            }
+
+            & li:nth-child(4) figure::before {
+                background-image: var(--ca-carrousel-4--medium-large);
+            }
+
+            & li:nth-child(5) figure::before {
+                background-image: var(--ca-carrousel-5--medium-large);
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    article.carrousel-container {
+        & ul.carrousel {
+            & li:nth-child(1) figure::before {
+                background-image: var(--ca-carrousel-1--large);
+            }
+
+            & li:nth-child(2) figure::before {
+                background-image: var(--ca-carrousel-2--large);
+            }
+
+            & li:nth-child(3) figure::before {
+                background-image: var(--ca-carrousel-3--large);
+            }
+
+            & li:nth-child(4) figure::before {
+                background-image: var(--ca-carrousel-4--large);
+            }
+
+            & li:nth-child(5) figure::before {
+                background-image: var(--ca-carrousel-5--large);
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    article.carrousel-container {
+        & ul.carrousel {
+            & li:nth-child(1) figure::before {
+                background-image: var(--ca-carrousel-1--full);
+            }
+
+            & li:nth-child(2) figure::before {
+                background-image: var(--ca-carrousel-2--full);
+            }
+
+            & li:nth-child(3) figure::before {
+                background-image: var(--ca-carrousel-3--full);
+            }
+
+            & li:nth-child(4) figure::before {
+                background-image: var(--ca-carrousel-4--full);
+            }
+
+            & li:nth-child(5) figure::before {
+                background-image: var(--ca-carrousel-5--full);
+            }
+        }
+    }
+}
