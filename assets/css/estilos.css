@@ -190,19 +190,18 @@ a {
             background-position: center;
             transform-origin: 30% 50%;
 
-            transition: rotate 5s ease-in-out;
-            transform: translatex(100%);
+            transition: rotate 5s ease;
         }
     }
 
-    /* &:hover span {
+    &:hover span {
         left: calc(90% - 10vw);
 
-        /* &::after {
+        &::after {
             rotate: -30deg;
-        } */
+        }
+    }
 }
-
 @keyframes ca-tractor-animated {
     0%,
     90% {
