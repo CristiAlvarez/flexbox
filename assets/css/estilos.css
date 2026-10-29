@@ -5,6 +5,7 @@ main {
 /* Selectores hijos directos */
 main > section > article {
     padding: 7.5vw;
+    background-color: rgb(250, 247, 247);
 }
 /* Colores de los textos */
 body,
@@ -46,7 +47,6 @@ ul.ca-enlaces {
         color: var(--color-a);
     }
 }
-
 .ca-efectos,
 a {
     display: inline-block;
