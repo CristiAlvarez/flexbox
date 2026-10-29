@@ -1,0 +1,75 @@
+/* Trasformer */
+ul.demo {
+    background: #eece8090;
+    border: 1px solid #d9deea;
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    & li {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 2rem;
+        background: #670b9e;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        color: #55607a;
+
+        & span {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background: #e67f7f;
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            transition: transform 0.5s ease;
+        }
+
+        &:hover span {
+            &.translate-x {
+                transform: translateX(2rem);
+            }
+            &.translate-y {
+                transform: translateY(2rem);
+            }
+            &.translate-xy {
+                transform: translate(2rem, 2rem);
+            }
+
+            &.rotate-45 {
+                transform: rotate(45deg);
+            }
+            &.rotate-90 {
+                transform: rotate(90deg);
+            }
+            &.rotate {
+                transform: rotate(1turn);
+            }
+
+            &.scale-50 {
+                transform: scale(1.5);
+            }
+
+            &.scale-x {
+                transform: scaleX(1.5);
+            }
+
+            &.scale-y {
+                transform: scaleY(1.5);
+            }
+        }
+    }
+    & figcaption {
+        color: white;
+    }
+}
