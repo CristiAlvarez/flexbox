@@ -1,4 +1,28 @@
 :root {
+    /* ------Font-size------ */
+    /* h2 */
+    --font-size-xxxl: clamp(2.25rem, 1.6rem + 3.2vw, 4.5rem);
+    /* h3 */
+    --font-size-xxl: clamp(1.6rem, 1.4rem + 1.5vw, 2.4rem);
+    /* h4 */
+    --font-size-xl: clamp(1.4rem, 1.2rem + 0.25vw, 2.2rem);
+    /* h5 */
+    --font-size-l: clamp(1.2rem, 1rem + 0.25vw, 2rem);
+    /* h6 */
+    --font-size-m: clamp(1rem, 0.8rem + 0.25vw, 1.125rem);
+    /* Figcaption */
+    --font-size-s: clamp(0.8rem, 0.6rem + 0.2vw, 1rem);
+
+    /* 
+    h2:xxxl
+    h3:xxl
+    h4:xl
+    h5:l
+    h6:m
+
+    figcaption:s
+    */
+
     /* Colores del sitio */
     --ca-bg-color: #faf7f7;
     --color-a: #670b9e;
