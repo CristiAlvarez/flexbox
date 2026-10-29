@@ -1,0 +1,19 @@
+/* Marca de agua */
+.agua {
+    &::after {
+        position: fixed;
+        content: "";
+        height: var(--ca-logo-height);
+        /* calc (height * ratio logo) */
+        width: calc(var(--ca-logo-height) * var(--ca-logo-ratio));
+        bottom: 1rem;
+        right: 0.5rem;
+
+        background-image: var(--ca-logo2);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        opacity: 50;
+    }
+}
