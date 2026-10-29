@@ -67,6 +67,39 @@ ul.demo {
             &.scale-y {
                 transform: scaleY(1.5);
             }
+            &.skew-x {
+                transform: skewX(25deg);
+            }
+            &.skew-y {
+                transform: skewY(25deg);
+            }
+            &.skew {
+                transform: skew(25deg, 10deg);
+            }
+            &.center {
+                transform-origin: center;
+                &:hover {
+                    transform: rotate(40deg);
+                }
+            }
+            &.top-left {
+                transform-origin: top left;
+                &:hover {
+                    transform: rotate(40deg);
+                }
+            }
+            &.bottom-right {
+                transform-origin: bottom right;
+                &:hover {
+                    transform: rotate(40deg);
+                }
+            }
+            &.caja-a {
+                transform: translate(80px) rotate(45deg);
+            }
+            &.caja-b {
+                transform: rotate(45deg) translate(80px);
+            }
         }
     }
     & figcaption {

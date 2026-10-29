@@ -5,7 +5,7 @@ main {
 /* Selectores hijos directos */
 main > section > article {
     padding: 7.5vw;
-    background-color: rgb(250, 247, 247);
+    background-color: var(--ca-bg-color);
 }
 /* Colores de los textos */
 body,
@@ -44,7 +44,7 @@ ul.ca-enlaces {
     & li {
         /* margin: 0.5em 0; */
         line-height: 1.5;
-        color: var(--color-a);
+        color: var(--color-c);
     }
 }
 .ca-efectos,
@@ -71,7 +71,7 @@ a {
         width: 90%;
         opacity: 0;
         background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-        background: radial-gradient(ellipse at center, var(--color-b) 0%, rgba(224, 8, 8, 0) 60%);
+        background: radial-gradient(ellipse at center, var(--color-c) 0%, rgba(224, 8, 8, 0) 60%);
         /* W3C */
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
