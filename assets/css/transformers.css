@@ -9,7 +9,7 @@ ul.demo {
     align-items: center;
     gap: 1.2rem;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-evenly;
 
     & li {
         display: inline-flex;
@@ -99,6 +99,27 @@ ul.demo {
             }
             &.caja-b {
                 transform: rotate(45deg) translate(80px);
+            }
+            &.triplete {
+                transform: translateY(-12px) rotate(8deg) scale(1.5);
+            }
+            &.perspec-x {
+                perspective: 400px;
+                &:hover {
+                    transform: rotateX(60deg);
+                }
+            }
+            &.perspec-y {
+                perspective: 400px;
+                &:hover {
+                    transform: rotateY(60deg);
+                }
+            }
+            &.perspec-xy {
+                perspective: 400px;
+                &:hover {
+                    transform: rotateX(30deg) rotateY(-30deg);
+                }
             }
         }
     }
