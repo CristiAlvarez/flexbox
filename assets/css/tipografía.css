@@ -1,3 +1,59 @@
+/* TAMAÑO DE LETRAS */
+html {
+    font-size: 16px;
+    body {
+        line-height: 1.6;
+    }
+}
+
+h2 {
+    font-size: var(--font-size-xxxl);
+}
+h3 {
+    font-size: var(--font-size-xxl);
+    color: var(--color-c);
+    &::first-letter {
+        color: var(--color-a);
+        font-size: var(--font-size-xxxl);
+    }
+}
+h4 {
+    font-size: var(--font-size-xl);
+}
+h5 {
+    font-size: var(--font-size-l);
+}
+h6 {
+    font-size: var(--font-size-m);
+}
+
+p,
+ul,
+ol,
+li,
+a {
+    font-size: var(--font-size-m);
+}
+
+p::first-letter {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+}
+
+figcaption,
+small,
+footer ul li a {
+    font-size: var(--font-size-s);
+}
+
+/* Colores de los textos */
+body,
+p,
+li,
+span {
+    color: var(--color-texto);
+}
+
 /* Tipografías del sitio */
 
 h1,
