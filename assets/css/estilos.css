@@ -57,6 +57,9 @@ small,
 footer ul li a {
     font-size: var(--font-size-s);
 }
+nav ul li {
+    font-size: var(--font-size-xxl);
+}
 
 /* -------------------------------------------
    ------------FIN TEXTOS---------------------
