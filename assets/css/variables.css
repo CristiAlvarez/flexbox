@@ -31,16 +31,16 @@
     --color-texto: #666;
     --color-body: #fefefe;
     --color-a--hover: rgba(0, 0, 0, 0.5);
-    --ca-color-h2: #666666af;
+    --ca-color-h2: #f0ebebd8;
     --color-h2: #680b9eab;
 
     /* Colores menú */
-    --menu-bg: #66666679;
+    --menu-bg: #66666641;
     --menu-li: #fefefec2;
     --menu-text: #666666cc;
 
     /* Imágenes del sitio */
-    --ca-portada: url("/assets/svg/logo/logo2.svg");
+    --ca-portada: url("../svg/logo/logo2.svg");
 
     --ca-img-galeria-1: url("https://cdn.pixabay.com/photo/2017/11/11/21/55/freedom-2940655_1280.jpg");
     --ca-img-galeria-2: url("https://cdn.pixabay.com/photo/2016/11/13/12/52/kuala-lumpur-1820944_1280.jpg");
