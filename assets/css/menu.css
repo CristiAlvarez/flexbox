@@ -47,6 +47,7 @@ nav.principal {
         font-weight: bold;
         cursor: pointer;
         user-select: none;
+        color: var(--color-a);
 
         /* Generamos las tres líneas horizontales por defecto (Menú Cerrado) */
         &::before {
@@ -85,6 +86,9 @@ nav.principal {
         & li {
             width: 100%;
             border-bottom: 1px solid;
+            & a {
+                color: var(--color-a);
+            }
         }
 
         /* Submenú móvil: SIEMPRE ABIERTO */

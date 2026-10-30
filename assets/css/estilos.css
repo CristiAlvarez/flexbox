@@ -225,11 +225,13 @@ header.portada {
 
     &::before {
         background-image: var(--ca-portada);
+        background-position: center;
+        background-size: contain;
     }
 }
 
 header.portada {
-    background-color: black;
+    background-color: rgba(245, 236, 236, 0.349);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +246,16 @@ header.portada {
     }
 }
 
-nav > ul > li {
-    /* background-color: lime; */
+nav > ul > li a {
     font-size: var(--font-size-xxl);
+}
+nav {
+    background-color: var(--menu-bg);
+
+    & li {
+        background-color: var(--menu-li);
+        & a {
+            color: var(--menu-text);
+        }
+    }
 }
