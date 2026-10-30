@@ -1,12 +1,6 @@
-main {
-    min-height: 100vh;
-}
-
-/* Selectores hijos directos */
-main > section > article {
-    padding: 3.5vw;
-    background-color: var(--ca-bg-color);
-}
+/* ---------------------------- 
+   -- SELECTORES DE TIPO -- 
+---------------------------- */
 
 /* Eliminación de subrayado de enlaces y colores */
 a {
@@ -18,10 +12,112 @@ a {
     }
 }
 
+main {
+    min-height: 100vh;
+}
+
 figure {
     margin: 0;
 }
 
+/* ---------------------------- 
+      ---- MAQUETACIÓN---- 
+   ---------------------------- */
+
+body {
+    & > header {
+        padding-left: 4vw;
+    }
+    & > nav.principal {
+        padding-right: 4vw;
+    }
+    & main > section > article {
+        padding: 5vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        background-color: var(--ca-bg-color);
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        & > header {
+            padding-left: 7.5vw;
+        }
+        & > nav.principal {
+            padding-right: 7.5vw;
+        }
+        & main > section > article {
+            padding-left: 7.5vw;
+            padding-right: 7.5vw;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        & > header {
+            padding-left: 10vw;
+        }
+        & > nav.principal {
+            padding-right: 10vw;
+        }
+        & main > section > article {
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+    }
+}
+
+/* ---------------------------- 
+   -- CABECERA DEL SITIO -- 
+---------------------------- */
+
+body {
+    position: relative;
+    & > header {
+        z-index: 3;
+    }
+    & > nav {
+        z-index: 2;
+    }
+}
+
+body > header,
+body > nav.principal {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+}
+
+body > header {
+    display: flex;
+    align-items: center;
+    & a {
+        & figure.logo {
+            background-image: var(--ca-logo2);
+            background-color: rgba(245, 236, 236, 0.349);
+            height: 3rem;
+            width: calc(3rem * var(--ca-logo-ratio));
+            margin: 0;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    }
+}
+
+body > nav {
+    left: 0;
+    width: 100%;
+}
+body main {
+    margin-top: 3.6rem;
+}
+
+/* ---------------------------- 
+          -- OTROS -- 
+---------------------------- */
 /* Ejemplo del uso de pseudoclase :not() */
 ul:not(.ca-enlaces) {
     list-style: none;
@@ -31,13 +127,12 @@ ul:not(.ca-enlaces) {
 
 ul.ca-enlaces {
     & li {
-        /* margin: 0.5em 0; */
         line-height: 1.5;
         color: var(--color-c);
     }
 }
 .ca-efectos,
-a {
+a:not(.no-border) {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -139,7 +234,7 @@ header.portada {
     &::before {
         background-image: var(--ca-portada);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         filter: blur(2px) drop-shadow(8px 8px 10px rgb(255, 0, 191));
     }
 }
@@ -153,26 +248,9 @@ header.portada {
     & h2 {
         position: relative;
         width: 100%;
-        padding: 0.5em;
+        padding: 0em;
         text-align: center;
         background-color: var(--ca-color-h2);
         color: var(--color-h2);
-    }
-}
-
-nav > ul > li a {
-    font-size: var(--font-size-m);
-}
-nav.principal {
-    background-color: var(--menu-bg);
-
-    & li {
-        background-color: var(--menu-li);
-        & a {
-            color: var(--menu-text);
-        }
-        & > ul > li > a {
-            background-color: var(--bg-submenu);
-        }
     }
 }

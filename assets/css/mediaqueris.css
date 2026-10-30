@@ -136,12 +136,12 @@ article.carrousel-container {
 }
 
 /* Botón responsive Media Queris */
-/* .ca-responsive {
+.ca-responsive {
     padding: 4em 10em;
     border-radius: 10px;
 
     background: var(--color-a);
-    color: #000;
+    color: #3f3941;
     &::before {
         content: "Móvil: @media (max-width: 599px)";
     }
@@ -163,4 +163,4 @@ article.carrousel-container {
             content: "PC: @media (min-width: 1024px)";
         }
     }
-} */
+}

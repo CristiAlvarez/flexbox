@@ -75,3 +75,20 @@ html {
     font-weight: 500;
     font-style: normal;
 }
+
+nav > ul > li a {
+    font-size: var(--font-size-m);
+}
+nav.principal {
+    background-color: var(--menu-bg);
+
+    & li {
+        background-color: var(--menu-li);
+        & a {
+            color: var(--menu-text);
+        }
+        & > ul > li > a {
+            background-color: var(--bg-submenu);
+        }
+    }
+}
