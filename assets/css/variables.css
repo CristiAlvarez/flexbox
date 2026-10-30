@@ -38,6 +38,7 @@
     --menu-bg: #66666641;
     --menu-li: #fefefec2;
     --menu-text: #666666cc;
+    --bg-submenu: #fefefe;
 
     /* Imágenes del sitio */
     --ca-portada: url("../svg/logo/logo2.svg");
