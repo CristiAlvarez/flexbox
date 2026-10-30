@@ -194,6 +194,7 @@ header.portada {
         background-image: var(--ca-portada);
         background-position: center;
         background-size: contain;
+        filter: blur(2px) drop-shadow(8px 8px 10px rgb(255, 0, 191));
     }
 }
 
