@@ -136,29 +136,6 @@ a {
     }
 }
 
-/* Cambio de color y sombras */
-/* .ca-transicion-color {
-    width: 25vw;
-    height: 25vw;
-
-    background-color: var(--color-a);
-    box-shadow: none;
-    box-shadow: 1em 1em 1em var(--color-c);
-    transition:
-        background-color 2s ease,
-        box-shadow 2s ease,
-        width 2s ease;
-
-    &:hover {
-        width: 100%;
-        background-color: var(--color-c);
-        box-shadow:
-            var(--color-a) -5px -5px 20px 0px,
-            var(--color-b) 0px 13px 20px 0px,
-            var(--color-c) 8px -8px 10px 0px;
-    }
-} */
-
 .ca-tractor {
     position: relative;
     width: 100%;
@@ -177,7 +154,7 @@ a {
         top: 70%;
         bottom: 0;
         left: 0;
-        transition: left 5s;
+        transition: left 8s;
 
         &::after {
             content: "";
@@ -189,17 +166,11 @@ a {
             background-repeat: no-repeat;
             background-position: center;
             transform-origin: 30% 50%;
-
-            transition: rotate 5s ease;
         }
     }
 
     &:hover span {
-        left: calc(90% - 10vw);
-
-        &::after {
-            rotate: -30deg;
-        }
+        left: calc(91% - 10vw);
     }
 }
 
@@ -213,10 +184,6 @@ a {
     &:hover span {
         /* Pausa al poner el ratón encima */
         animation-play-state: paused;
-
-        &::after {
-            rotate: -30deg;
-        }
     }
 }
 

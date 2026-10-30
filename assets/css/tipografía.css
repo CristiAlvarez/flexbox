@@ -1,0 +1,21 @@
+/* Tipografías del sitio */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-tourney);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 125;
+}
+
+html {
+    font-family: var(--ff-montserrat);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

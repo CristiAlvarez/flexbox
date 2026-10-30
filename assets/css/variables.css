@@ -23,6 +23,11 @@
     figcaption:s
     */
 
+    /* Font Family */
+    --ff-montserrat: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+
+    --ff-tourney: "Tourney", Arial, Helvetica, sans-serif;
+
     /* Colores del sitio */
     --ca-bg-color: #faf7f7;
     --color-a: #670b9e;
