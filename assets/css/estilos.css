@@ -57,9 +57,6 @@ small,
 footer ul li a {
     font-size: var(--font-size-s);
 }
-nav ul li {
-    font-size: var(--font-size-xxl);
-}
 
 /* -------------------------------------------
    ------------FIN TEXTOS---------------------
@@ -245,4 +242,9 @@ header.portada {
         background-color: var(--ca-color-h2);
         color: var(--color-h2);
     }
+}
+
+nav > ul > li {
+    /* background-color: lime; */
+    font-size: var(--font-size-xxl);
 }
